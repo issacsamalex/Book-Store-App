@@ -4,8 +4,8 @@
   "description": "Book-store-app Backend",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "build": "cd server && npm install && cd ../client && npm install && npm run build",
+    "start": "node server/server.js",
     "dev": "nodemon server/server.js"
   },
   "author": "Issac",

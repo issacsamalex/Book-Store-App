@@ -1,0 +1,36 @@
+input,
+textarea,
+select {
+  min-height: 40px;
+  width: 100%;
+  border: rgb(177, 177, 177) solid 1px;
+  border-radius: 6px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+textarea {
+  padding-top: 15px;
+  min-height: 60px;
+}
+
+.ant-form-item {
+  margin-bottom: 10px;
+}
+
+input:focus, textarea:focus , select:focus {
+  outline: none;
+  border: rgb(60, 60, 60) solid 1px;
+}
+
+button {
+  height: 40px;
+}
+
+.underline-heading {
+  width: 80px;
+  height: 6px;
+  background: #1f3a52;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

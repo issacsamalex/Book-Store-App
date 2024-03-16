@@ -1,0 +1,142 @@
+import { Form, Input, Modal, message, ConfigProvider } from 'antd'
+import React from 'react'
+import Button from '../../../components/Button'
+import { useDispatch } from 'react-redux';
+import { HideLoading, ShowLoading } from '../../../redux/loadersSlice';
+import { UpdateUser } from '../../../api/users';
+
+const UsersEditForm = ({
+    openUserEditForm,
+    setOpenUserEditForm,
+    selectedUser,
+    getUsers,
+}) => {
+
+    const dispatch = useDispatch();
+
+
+    const onFinish = async (values) => {
+        try {
+          dispatch(ShowLoading());
+          const response = await UpdateUser({
+            ...values,
+            _id: selectedUser._id,
+          });
+          message.success(response.message);
+          getUsers();
+          setOpenUserEditForm(false)
+          dispatch(HideLoading());
+        } catch (error) {
+          dispatch(HideLoading());
+          message.error("Data not updated");
+        }
+      };
+
+    
+
+  return (
+    <>
+    <ConfigProvider
+    theme={{
+        token: {
+          colorPrimary: "#3F76A7",
+        }
+      }}
+    >
+    <Modal
+    title="Update User Info"
+    centered
+    open={openUserEditForm}
+    onCancel={() => setOpenUserEditForm(false)}
+    footer={null}
+    >
+        <Form
+        layout='vertical'
+        initialValues={{
+            name: selectedUser.name,
+            email: selectedUser.email,
+            phone: selectedUser.phone,
+          }}
+        onFinish={onFinish}
+        >
+        <Form.Item
+            label="Name"
+            name="name"
+            rules={[
+                {
+                  required: true,
+                  message: "Please enter your name",
+                },
+                {
+                  whitespace: true,
+                  message: "Name cannot be empty",
+                },
+                {
+                  min: 3,
+                  message: "Name must be at least 3 characters"
+                },
+              ]}
+              hasFeedback
+          >
+            <Input placeholder="Please enter your name"/>
+          </Form.Item>
+
+          <Form.Item
+            label="Email"
+            name="email"
+            rules={[
+              {
+                required: true,
+                message: "Please enter your email",
+              },
+              {
+                type: "email",
+                message: "Please enter a valid e-mail"
+              }
+            ]}
+            hasFeedback
+          >
+            <Input placeholder="Please enter your email"/>
+          </Form.Item>
+          <Form.Item
+            label="Contact Number"
+            name="phone"
+            rules={[
+                {
+                  required: true,
+                  message: "Please enter your phone number",
+                },
+                {
+                  validator: (_, value) => {
+                    if(!value){
+                      return Promise.reject()
+                    }else if(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(value)) {
+                      return Promise.resolve();
+                    }else {
+                      return Promise.reject("Please enter a valid phone number");
+                    }
+                  }
+                }
+              ]}
+              hasFeedback
+          >
+            <Input maxLength={10} placeholder="Enter your phone number"/>
+          </Form.Item>
+
+          <div className="flex justify-end gap-2 mt-1">
+            <Button
+              type="button"
+              variant="flat"
+              title="Cancel"
+              onClick={() => setOpenUserEditForm(false)}
+            />
+            <Button type="submit" title="Update" />
+          </div>
+        </Form>
+    </Modal>
+    </ConfigProvider>
+    </>
+  )
+}
+
+export default UsersEditForm

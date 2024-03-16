@@ -1,0 +1,144 @@
+.bookDetails{
+    padding: 10px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+    border-radius: 6px;
+    margin: 20px;
+}
+
+.bookDetails > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.bookDescriptionImage{
+    border-radius: 6px;
+}
+
+.bookDetails > div:first-child{
+    width: 600px;
+}
+
+.bookDetails > div:last-child{
+    align-items: flex-start;
+}
+
+.detailsBlock-1 > h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.detailsBlock-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 5px 0;
+    margin-top: 0px;
+    gap: 10px;
+}
+.detailsBlock-2 > span{
+    color: rgba(54, 54, 54, 0.5);
+    font-size: 14px;
+}
+
+.detailsBlock-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: rgba(54, 54, 54, 0.8);
+}
+
+.detailsBlock-4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    color: rgba(54, 54, 54, 0.807);
+}
+.detailsBlock-4 > span:last-child{
+    font-weight: 600;
+}
+
+
+.detailsBlock-5{
+    display: flex;
+    margin-top: 10px;
+}
+
+.reviewSection{
+    margin-top: 5px;
+    padding: 10px
+}
+
+.reviewHeading{
+    font-size: 24px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.reviewCards{
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 10px;
+    
+}
+.reviewCard{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.reviewCard span{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
+}
+.reviewCard .reviewDate{
+    color: rgb(150, 150, 150);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .bookDetails{
+        flex-direction: column;
+        height: unset;
+        align-items: center;
+    }
+    .bookDetails > div:last-child{
+        align-items: center;
+    }
+    .bookDetails > div:first-child{
+        width: 20%;
+    }
+    .detailsBlock-1 div{
+        display: flex;
+        flex-direction: column;
+    }
+    .detailsBlock-2{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px){
+    .detailsBlock-1 > h1{
+        font-size: 24px;
+    }
+}
+

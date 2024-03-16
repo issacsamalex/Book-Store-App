@@ -1,0 +1,128 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.title-heading{
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+
+.title-description{
+    font-size: 24px;
+    margin-bottom: 52px;
+}
+
+.primary-btn{
+    background-color: var(--color-cta);
+    color: var(--color-text);
+    border: none;
+    border-radius:6px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    background-color: white;
+    color: var(--color-bg);
+    transition: all 0.3s linear;
+}
+
+.secondary-btn{
+    background: none;
+    color: var(--color-text);
+    border: 1px solid;
+    border-radius:6px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.secondary-btn:hover{
+    background-color: white;
+    color: var(--color-bg);
+    transition: all 0.3s linear;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-img{
+    width: 50%;
+    z-index: 1;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating{
+    0%{
+        transform: translate(0, 0px);
+    }
+    50%{
+        transform: translate(0, 10px);
+    }
+    100%{
+        transform: translate((0, -0px));
+    }
+}
+
+.topBlur{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 350px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.bottomBlur{
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 250px;
+    top: 246px;
+    right: -25vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 830px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+    .content{
+        align-items: center;
+    }
+}

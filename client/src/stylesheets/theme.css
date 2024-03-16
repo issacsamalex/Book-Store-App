@@ -1,0 +1,96 @@
+:root {
+    --color-text: #ffffff;
+    --color-primary: #1F3A52;
+    --color-secondary: #52371f;
+    --color-cta: #3F76A7;
+    --color-bg: #04152d;
+    --color-error-msg: #b71c1c;
+}
+
+/* Background Colors */
+.bg-primary {
+    background-color: var(--color-bg);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-dash-header-color{
+    background-color: var(--color-primary);
+}
+
+/* Button color primary */
+.btn-primary {
+    background-color: var(--color-cta);
+    border: none;
+}
+.btn-flat-primary {
+    border: none;
+}
+
+/* Danger btn color */
+.btn-danger-color{
+    color: red;
+}
+
+
+/* Border Colors */
+.border-primary {
+    border-color: var(--color-primary);
+    
+}
+
+.border-secondary {
+    border-color: var(--color-secondary);
+    background: none;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-teritary{
+    color: rgb(190, 190, 190);
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Text Sizes */
+.text-min{
+    font-size: 10px;
+}
+.text-sm {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 16px;
+}
+
+.text-lg {
+    font-size: 18px;
+}
+
+.text-xl {
+    font-size: 20px;
+}
+
+.text-2xl {
+    font-size: 24px;
+}
+
+.text-3xl {
+    font-size: 28px;
+}

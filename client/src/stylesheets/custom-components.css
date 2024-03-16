@@ -1,0 +1,87 @@
+.authentication-form {
+  width: 450px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:hover {
+  cursor: pointer;
+  color: var(--colour-primary);
+  text-decoration: underline;
+}
+
+.hover-btn{
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.icon-color{
+  color: var(--color-cta);
+}
+
+.disabled-btn{
+  cursor: not-allowed;
+  opacity: 0.5;
+  border: none;
+}
+
+.error-msg{
+  background-color: var(--color-error-msg);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+table{
+  border: 1px solid #cdcdcd;
+}
+
+.modal-msg-card{
+  padding: 5px;
+  border: 1px solid #3F76A7;
+  border-radius: 4px;
+  background-color: rgb(230, 246, 255);
+}
+
+.centered-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-card-book{
+  height: 290px;
+  object-fit: contain;
+}
+
+/* Styling for loader component */
+.loader-parent{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.70);
+  z-index: 100000;
+}
+
+
+
+@media screen and (max-width: 500px){
+  .centered-div{
+    width: 400px;
+  }
+}

@@ -1,0 +1,142 @@
+:root {
+    --transition: all 0.2s ease-in-out;
+    --bg-circles: #3F76A7;
+}
+
+.container-card{
+    margin-top: 76px;
+    color: var(--color-text);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title-card{
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.box-card{
+    margin-top: 37px;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #3F76A7 0%, #0d2b43 100%);
+    box-shadow: 0 16px 14px 0 #04152d;
+    padding: 18px 24px;
+    max-width: 325px;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-card::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-circles);
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    filter: blur(50px);
+}
+.book-card.active::before,
+.book-card:hover::before{
+    width: 230px;
+    height: 230px;
+}
+.book-card.active::after,
+.book-card::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -140px;
+    left: -140px;
+    background-color: var(--bg-circles);
+    border-radius: 50%;
+    transition: var(--transition);
+    filter: blur(50px);
+}
+.book-card.active::after,
+.book-card:hover::after{
+    bottom: -35px;
+    left: -35px;
+}
+
+
+
+.image-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-card{
+    margin-bottom: 26px;
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid;
+    box-shadow: 0 8px 16px 0 #04152d83;
+    transition: var(--transition);
+}
+.book-card.active .image-card,
+.book-card:hover .image-card{
+    transform: scale(0.9);
+}
+
+.book-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.book-genre{
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.book-links{
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.book-link{
+    background: none;
+    color: var(--color-text);
+    border: 1px solid;
+    border-radius:6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.book-link:hover{
+    background-color: white;
+    color: var(--color-bg);
+    transition: all 0.3s linear;
+}
+
+
+
+
+@media screen and (max-width: 1440px){
+    .book-card{
+        max-width: 255px;
+    }
+    .image-card{
+        width: 60%;
+        height: 180px;
+    }
+}

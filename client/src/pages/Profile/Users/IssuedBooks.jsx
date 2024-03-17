@@ -41,7 +41,7 @@ const IssuedBooks = ({
             dataIndex: "_id",
         },
         {
-            title: "Book",
+            title: "Book Name",
             dataIndex: "book",
             render: (book) => book.title,
         },

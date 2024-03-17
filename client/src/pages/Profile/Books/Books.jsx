@@ -89,7 +89,7 @@ const Books = () => {
       dataIndex: "availableCopies",
     },
     {
-      title: "Rented count",
+      title: "Rented Count",
       render: (data) => data.totalCopies - data.availableCopies
     },
     {

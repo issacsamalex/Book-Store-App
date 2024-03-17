@@ -36,7 +36,7 @@ const Profile = () => {
     },
     {
       key: '4',
-      label: role === 'admin' ? 'Book Store' : null,
+      label: role === 'admin' ? 'Bookstore' : null,
       children: role === 'admin' && <Books/>
     },
     {

@@ -1,6 +1,6 @@
 <h1 align="center" id="title">BookLendr (Book Store App) 📙</h1>
 
-<p id="description">The BookLendr App is a comprehensive web application developed to streamline the management of a bookstore. Leveraging the MERN stack (<strong> MongoDB Express.js React Node.js </strong>) the application offers a user-friendly interface for both administrators and patrons facilitating efficient book inventory management user interaction and access control.</p>
+<p id="description">The BookLendr App is a comprehensive web application developed to streamline the management of a bookstore. Leveraging the <strong>MERN stack (MongoDB, Express.js, React, Node.js)</strong> the application offers a user-friendly interface for both administrators and patrons facilitating efficient book inventory management user interaction and access control.</p>
 
 <h2>🚀 Demo</h2>
 

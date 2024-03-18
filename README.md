@@ -5,6 +5,7 @@
 <h2>🚀 Demo</h2>
 
 [Demo Video](https://drive.google.com/file/d/1mF1QEYOjLM8iLOajVfKTZ3zAFUzfQoOq/view?usp=sharing)
+[Hosted Link](https://booklendr.onrender.com)
 
 
 <img src="https://i.imgur.com/OpwVFj3.jpeg" alt="project-screenshot">

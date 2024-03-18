@@ -8,7 +8,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.imgur.com/OpwVFj3.jpeg" alt="project-screenshot" width="2560" height="1440/">
+<img src="https://i.imgur.com/OpwVFj3.jpeg" alt="project-screenshot">
 
   
   

@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[Demo Video](https://drive.google.com/file/d/1mF1QEYOjLM8iLOajVfKTZ3zAFUzfQoOq/view?usp=sharing)
+[Demo Video](https://drive.google.com/file/d/1mF1QEYOjLM8iLOajVfKTZ3zAFUzfQoOq/view?usp=sharing)<br/>
 [Hosted Link](https://booklendr.onrender.com)
 
 

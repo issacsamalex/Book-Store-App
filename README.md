@@ -6,7 +6,6 @@
 
 [Demo Video](https://drive.google.com/file/d/1mF1QEYOjLM8iLOajVfKTZ3zAFUzfQoOq/view?usp=sharing)
 
-<h2>Project Screenshots:</h2>
 
 <img src="https://i.imgur.com/OpwVFj3.jpeg" alt="project-screenshot">
 

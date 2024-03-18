@@ -8,7 +8,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/IIVPbSM" data-context="false" ><a href="//imgur.com/a/IIVPbSM"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src="https://i.imgur.com/OpwVFj3.jpeg" alt="project-screenshot" width="2560" height="1440/">
 
   
   

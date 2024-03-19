@@ -26,6 +26,12 @@ Here're some of the project's best features:
 *   Users can manage their profiles track borrowed books and interact with the community.
 *   Features such as book reviews ratings and recommendations foster user engagement and community interaction.
 
+
+<h2>🚀 Project Documentation</h2>
+
+[Click to view project synopsis](https://docs.google.com/document/d/1Dy9bZwp4ZInArVAR4M-ZkgiKTTNSLdB5f6-IqXvU71Y/edit?usp=sharing)
+
+
 <h2>💖Like my work?</h2>
 
 This project needs a ⭐️ from you. Don't forget to leave a star ⭐️. If you found the project helpful consider supporting me.
